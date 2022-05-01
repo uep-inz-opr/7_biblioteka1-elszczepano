@@ -35,7 +35,7 @@ books_count = int( input() )
 biblioteka = Biblioteka()
 
 for index in range(0, books_count):
-    book = input().replace('(', '').replace(')', '').replace('"', '').replace(' ', '').split(",")
+    book = input().replace('(', '').replace(')', '').replace(' "', '').replace('"', '').split(",")
 
     biblioteka.dodaj_egzemplarz_ksiazki(book[0],book[1],book[2])
 
