@@ -46,4 +46,4 @@ for ksiazka in biblioteka.ksiazki:
         if egzemplarz.ksiazka_ref is ksiazka:
             counter += 1
 
-        print("('",ksiazka.tytul,"\',\'",ksiazka.autor,"\',",counter,")")
+        print("(",ksiazka.tytul,",",ksiazka.autor,",",counter,")")
