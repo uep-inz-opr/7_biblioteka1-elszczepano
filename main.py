@@ -38,9 +38,9 @@ for index in range(0, books_count):
     book = input().replace('(', '').replace(')', '').replace(' "', '').replace('"', '').split(",")
 
     biblioteka.dodaj_egzemplarz_ksiazki(book[0],book[1],book[2])
+    
 
-
-for ksiazka in biblioteka.ksiazki.sort(key=lambda k: k.tytul):
+for ksiazka in sorted(biblioteka.ksiazki, key=lambda ksiazka: ksiazka.tytul):
     counter = 0
 
     for egzemplarz in biblioteka.egzemplarze:
