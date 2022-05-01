@@ -40,7 +40,7 @@ for index in range(0, books_count):
     biblioteka.dodaj_egzemplarz_ksiazki(book[0],book[1],book[2])
 
 
-for ksiazka in biblioteka.ksiazkiut.sort(key=lambda k: k.tytul):
+for ksiazka in biblioteka.ksiazki.sort(key=lambda k: k.tytul):
     counter = 0
 
     for egzemplarz in biblioteka.egzemplarze:
